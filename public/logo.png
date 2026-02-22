@@ -1,0 +1,20 @@
+# Logo Image Placeholder
+
+Please replace this file with your actual BayT Designs logo image.
+
+Expected format:
+- File name: logo.png
+- Recommended size: 48x48px (for navbar display)
+- Format: PNG with transparent background
+- The logo will be displayed in a 12x12 (48x48px) container
+
+To update:
+1. Delete this placeholder file
+2. Add your actual logo.png file to this directory
+3. The navbar will automatically display your logo
+
+Current navbar logo settings:
+- Container: w-12 h-12 (48x48px)
+- Object fit: object-contain (maintains aspect ratio)
+- Rounded corners: rounded-2xl
+- Hover effects: scale-105 and shadow-xl
