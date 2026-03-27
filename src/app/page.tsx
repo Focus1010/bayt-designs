@@ -95,28 +95,32 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                title: 'Nexus Brand Identity',
-                category: 'Brand Identity',
-                description: 'Complete brand identity and visual system for a decentralized finance platform, including logo design, color palette, and comprehensive brand guidelines.',
-                image: '/projects/nexus-brand.jpg',
+                title: 'Convocation Magazine Design',
+                category: 'Poster Design',
+                description: 'A stylish graduation poster design that blends elegance and confidence through warm tones, clean typography, and a magazine-inspired layout to celebrate academic achievement and personal excellence.',
+                image: 'https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631829/Book_20260211_034220_0000_y2fsyh.png',
                 featured: true
               },
               {
-                title: 'TechFlow Campaign Posters',
-                category: 'Poster & Campaign',
-                description: 'Dynamic poster design campaign for a B2B tech startup, featuring marketing materials, event graphics, and campaign visuals.',
-                image: '/projects/techflow-social.jpg'
+                title: 'Luxury Watch Poster',
+                category: 'Poster Design',
+                description: 'A luxury watch advertisement design for FadLuxe that highlights elegance, precision, and exclusivity through a clean monochrome layout and premium visual composition.',
+                image: 'https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631828/1000289853.png_1_fskq0t.jpg'
               },
               {
-                title: 'MetaMinds Motion Graphics',
-                category: 'Motion & Digital',
-                description: 'Complete motion graphics and digital design for a Web3 gaming platform, including animated content, video graphics, and interactive elements.',
-                image: '/projects/metaminds-nft.jpg'
+                title: 'Convocation Magazine Design',
+                category: 'Poster Design',
+                description: 'A modern graduation poster design celebrating academic achievement with a clean layout, elegant typography, and a premium visual composition that highlights the graduate’s journey and success.',
+                image: 'https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631822/Book_20260131_162054_0000_tnpbvi.png'
               }
             ].map((project, index) => (
               <div key={index} className="group cursor-pointer">
                 <div className="relative overflow-hidden rounded-3xl mb-8 card-premium hover-lift">
-                  <div className="aspect-video gradient-bg opacity-90" />
+                  <img 
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                     <Button variant="glass" size="lg" className="animate-scale-in">
                       View Project
@@ -193,75 +197,9 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Button variant="gradient" size="lg" asChild>
-              <Link href="/services">
+              <Link href="/services" className= "flex item-center gap-4">
                 All Services
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Client Testimonials</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our clients have to say.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Sarah Chen',
-                company: 'Nexus Protocol',
-                content: 'BayT Designs transformed our vision into a stunning brand identity. Their understanding of the Web3 space is unmatched.'
-              },
-              {
-                name: 'Marcus Rodriguez',
-                company: 'TechFlow',
-                content: 'Working with BayT Designs was a game-changer for our social media presence. Engagement increased by 300%.'
-              },
-              {
-                name: 'Emily Watson',
-                company: 'MetaMinds Studio',
-                content: 'The NFT collection BayT Designs created for us exceeded all expectations. Creative, professional, and delivered on time.'
-              }
-            ].map((testimonial, index) => (
-              <div key={index} className="p-6 rounded-lg bg-card">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full mr-4" />
-                  <div>
-                    <h4 className="font-semibold">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                  </div>
-                </div>
-                <p className="text-muted-foreground italic">"{testimonial.content}"</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Ready to Create Something Amazing?</h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Let's work together to bring your brand vision to life with stunning visual design.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="gradient" size="xl" asChild>
-              <Link href="/contact">
-                Start Your Project
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button variant="outline" size="xl" asChild>
-              <Link href="/portfolio">
-                View Our Work
+                <ArrowRight className="ml-6 h-6" />
               </Link>
             </Button>
           </div>
@@ -274,8 +212,12 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">B</span>
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774644567/photo_2026-03-27_21-49-02_ofeuur.jpg" 
+                    alt="BayT Designs Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <span className="text-xl font-bold">BayT Designs</span>
               </div>
@@ -315,7 +257,7 @@ export default function Home() {
           </div>
           
           <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2024 BayT Designs. All rights reserved.</p>
+            <p>&copy; 2026 BayT Designs. All rights reserved.</p>
           </div>
         </div>
       </footer>

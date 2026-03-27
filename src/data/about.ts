@@ -71,8 +71,26 @@ export const testimonials: Testimonial[] = [
 export const aboutContent = {
   title: "About BayT Designs",
   subtitle: "Strategic Visual Design That Drives Results",
-  description: "I'm Ayantola Ayomide, a creative and detail-oriented Graphic Designer based in Lagos, Nigeria, and the founder of BayT Designs. With a background in Marketing and over five years of hands-on design experience, I specialize in creating strategic visual identities and high-impact marketing designs that help brands stand out and communicate clearly.",
+  description: "I'm Ayantola Ayomide, a creative and detail-oriented Graphic Designer based in Lagos, Nigeria, and founder of BayT Designs. With a background in Marketing and over five years of hands-on design experience, I specialize in creating strategic visual identities and high-impact marketing designs that help brands stand out and communicate clearly.",
   story: "My work focuses on brand identity development, social media design, campaign visuals, and marketing materials. I combine creativity with strategic thinking to transform ideas into clean, modern, and engaging visual solutions that strengthen brand presence and drive results.",
   mission: "Beyond aesthetics, I believe design should communicate, connect, and convert. My goal is to build visuals that are not only beautiful but purposeful.",
-  vision: "To help brands create meaningful connections through strategic visual design that drives business growth and audience engagement."
+  vision: "To help brands create meaningful connections through strategic visual design that drives business growth and audience engagement.",
+  values: [
+    {
+      title: "Creativity",
+      description: "Innovative design solutions that push boundaries and capture attention."
+    },
+    {
+      title: "Strategy",
+      description: "Purposeful design that aligns with your business goals and target audience."
+    },
+    {
+      title: "Quality",
+      description: "Meticulous attention to detail and commitment to excellence in every project."
+    },
+    {
+      title: "Impact",
+      description: "Design that drives results and creates meaningful connections with your audience."
+    }
+  ]
 }

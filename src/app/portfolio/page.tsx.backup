@@ -1,0 +1,178 @@
+'use client'
+
+import { useState } from 'react'
+import Navbar from '@/components/Navbar'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+
+export default function Gallery() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      
+      {/* Gallery Section */}
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h1 className="text-5xl sm:text-6xl font-bold mb-6">
+              Our
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+                Gallery
+              </span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+          {/* Gallery Grid */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+            {/* Gallery Image 1 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631829/Book_20260211_034220_0000_y2fsyh.png" 
+                alt="Gallery Image 1"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 1</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Brand Identity
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 2 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631828/1000289853.png_1_fskq0t.jpg" 
+                alt="Gallery Image 2"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 2</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Poster Design
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 3 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631822/Book_20260131_162054_0000_tnpbvi.png" 
+                alt="Gallery Image 3"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 3</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Motion Graphics
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 4 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631810/20250827_185603_qdfahv.png" 
+                alt="Gallery Image 4"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 4</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Campaign Design
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 5 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631806/Book_20260131_130102_0000_tyqd2e.png" 
+                alt="Gallery Image 5"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 5</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Brand Identity
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 6 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631803/1000289853_1.png_eqvudl.jpg" 
+                alt="Gallery Image 6"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 6</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Digital Design
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 7 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631787/Our_Services_20250905_220222_0000_pgyfcp.png" 
+                alt="Gallery Image 7"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 7</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Poster Design
+                </span>
+              </div>
+            </div>
+
+            {/* Gallery Image 8 */}
+            <div className="group relative overflow-hidden rounded-lg break-inside-avoid">
+              <img 
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631787/Wokcity_flyer_design1_ybnrq6.jpg" 
+                alt="Gallery Image 8"
+                loading="lazy"
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center p-4">
+                <h3 className="text-white text-lg font-semibold mb-2 text-center">Project Title 8</h3>
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Campaign Design
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Let's create something amazing together. Get in touch to discuss your design needs.
+          </p>
+          <Button variant="gradient" size="xl" asChild>
+            <Link href="/contact">
+              Start Your Project
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+    </div>
+  )
+}

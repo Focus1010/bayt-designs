@@ -27,17 +27,44 @@ export default function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false)
-      setFormData({ name: '', email: '', projectType: '', message: '' })
-    }, 3000)
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          to: 'ayantola41@gmail.com',
+          from: formData.email,
+          subject: `New Project Inquiry: ${formData.projectType}`,
+          text: `
+Name: ${formData.name}
+Email: ${formData.email}
+Project Type: ${formData.projectType}
+
+Message:
+${formData.message}
+          `.trim()
+        })
+      })
+
+      if (response.ok) {
+        setIsSubmitting(false)
+        setIsSubmitted(true)
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setIsSubmitted(false)
+          setFormData({ name: '', email: '', projectType: '', message: '' })
+        }, 3000)
+      } else {
+        throw new Error('Failed to send message')
+      }
+    } catch (error) {
+      console.error('Error sending message:', error)
+      setIsSubmitting(false)
+      alert('Sorry, there was an error sending your message. Please try again or contact us directly at ayantola41@gmail.com')
+    }
   }
 
   return (
@@ -49,7 +76,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-5xl sm:text-6xl font-bold mb-6">
-              Get in
+              Get in {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
                 Touch
               </span>

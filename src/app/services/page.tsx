@@ -21,7 +21,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h1 className="text-5xl sm:text-6xl font-bold mb-6">
-              Our
+              Our {" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
                 Services
               </span>
