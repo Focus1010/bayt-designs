@@ -44,7 +44,7 @@ export default function About() {
             </div>
             <div className="relative">
               <img 
-                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774645350/photo_2026-03-27_22-02-00_mj3ozi.jpg"
+                src="https://res.cloudinary.com/dw3tqpt60/image/upload/v1774704888/photo_2026-03-28_14-31-53_bc89u3.jpg"
                 alt="BayT Designs Team"
                 className="w-full h-full object-cover rounded-lg"
               />

@@ -12,99 +12,99 @@ export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631829/Book_20260211_034220_0000_y2fsyh.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774705019/photo_2026-03-28_14-36-09_e564uw.jpg"
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631828/1000289853.png_1_fskq0t.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631828/1000289853.png_1_fskq0t.jpg"
     },
     {
       id: 3,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631822/Book_20260131_162054_0000_tnpbvi.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631822/Book_20260131_162054_0000_tnpbvi.png"
     },
     {
       id: 4,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631810/20250827_185603_qdfahv.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631810/20250827_185603_qdfahv.png"
     },
     {
       id: 5,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631806/Book_20260131_130102_0000_tyqd2e.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774705017/photo_2026-03-28_14-36-13_hswzj3.jpg"
     },
     {
       id: 6,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631803/1000289853_1.png_eqvudl.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631803/1000289853_1.png_eqvudl.jpg"
     },
     {
       id: 7,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631787/Our_Services_20250905_220222_0000_pgyfcp.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631787/Our_Services_20250905_220222_0000_pgyfcp.png"
     },
     {
       id: 8,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631787/Wokcity_flyer_design1_ybnrq6.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631787/Wokcity_flyer_design1_ybnrq6.jpg"
     },
     {
       id: 9,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631783/Easter_Flyer_Design_gfd6jm.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631783/Easter_Flyer_Design_gfd6jm.jpg"
     },
     {
       id: 10,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631780/Ifed_Flyer_Design_ecesh1.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631780/Ifed_Flyer_Design_ecesh1.png"
     },
     {
       id: 11,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631777/Our_Services_20250929_180644_0000_yii2m4.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631777/Our_Services_20250929_180644_0000_yii2m4.png"
     },
     {
       id: 12,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631777/20250807_082750_gvb2xd.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631777/20250807_082750_gvb2xd.jpg"
     },
     {
       id: 13,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631758/Entimos_Scents_dfk1jh.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631758/Entimos_Scents_dfk1jh.png"
     },
     {
       id: 14,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631754/1000006050.png_rm0rgv.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631754/1000006050.png_rm0rgv.jpg"
     },
     {
       id: 15,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631745/1000289853.png_pkk33o.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631745/1000289853.png_pkk33o.jpg"
     },
     {
       id: 16,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631741/Invoice_Design_ypldhf.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631741/Invoice_Design_ypldhf.jpg"
     },
     {
       id: 17,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631733/New_Month_Design_aquyzl.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631733/New_Month_Design_aquyzl.jpg"
     },
     {
       id: 18,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631730/20250807_082732_mxzwab.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631730/20250807_082732_mxzwab.jpg"
     },
     {
       id: 19,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631727/1000357591.png_1_mxiq2d.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631727/1000357591.png_1_mxiq2d.jpg"
     },
     {
       id: 20,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631723/1000391459.png_s3ed0y.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631723/1000391459.png_s3ed0y.jpg"
     },
     {
       id: 21,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631712/Book_20260104_214803_0000_qdiwkn.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631712/Book_20260104_214803_0000_qdiwkn.png"
     },
     {
       id: 22,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631686/FadLuxe_20260201_071804_0000_nq25zc.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631686/FadLuxe_20260201_071804_0000_nq25zc.png"
     },
     {
       id: 23,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631682/Valentine_With_Ammies_Delight_qtlapg.png"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631682/Valentine_With_Ammies_Delight_qtlapg.png"
     },
     {
       id: 24,
-      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/v1774631650/1000302796.png_svakyy.jpg"
+      src: "https://res.cloudinary.com/dw3tqpt60/image/upload/f_auto,q_auto/v1774631650/1000302796.png_svakyy.jpg"
     }
   ]
 
@@ -243,7 +243,14 @@ export default function Gallery() {
               Start Your Project 
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-          </Button>
+          </Button> 
+          {" "}
+          <Button variant="outline" size="xl" className="btn-premium hover-lift" asChild>
+                          <Link href="https://drive.google.com/drive/folders/18yp0JxN91Uydj8zyOy7CWPR8u9D-KW7P" className="flex items-center gap-4">
+                            Other Projects
+                            <ArrowRight className="h-6 w-6" />
+                          </Link>
+                        </Button>
         </div>
       </section>
     </div>

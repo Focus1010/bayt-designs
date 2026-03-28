@@ -4,6 +4,7 @@ const nextConfig = {
     domains: ['localhost', 'res.cloudinary.com'],
     formats: ['image/webp', 'image/avif'],
   },
+  metadataBase: new URL('https://bayt-designs.vercel.app'),
 }
 
 module.exports = nextConfig
